@@ -31,13 +31,14 @@ const registerSchema = z.object({
 type RegisterType = z.infer<typeof registerSchema>
 
 export function registerUser(data: RegisterType): Promise<void> {
+    console.log(data)
     return fetch('api/register/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "name": data.name,
+            "username": data.name,
             "email": data.email,
             "password": data.password
         })

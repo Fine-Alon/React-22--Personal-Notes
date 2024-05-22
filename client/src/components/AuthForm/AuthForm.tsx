@@ -5,7 +5,7 @@ import { RegisterForm } from "../RegisterForm";
 import "./AuthForm.css";
 
 export const AuthForm = () => {
-  const [authType, setAuthType] = useState<string>("register");
+  const [authType, setAuthType] = useState<string>("auth");
 
   const handleClick = () => {
     setAuthType((prevState) =>

@@ -1,8 +1,9 @@
 import { FormField } from "../FormField";
 import { Button } from "../Button";
 import "./RegisterForm.css";
+import {FC} from "react";
 
-export const RegisterForm = () => {
+export const RegisterForm:FC = () => {
   return (
     <form className="register-form">
       <FormField label="Имя">

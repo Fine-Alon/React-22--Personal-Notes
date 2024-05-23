@@ -3,4 +3,7 @@
   background: url("./assets/note.svg") space;
   background-size: 24px;
   color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

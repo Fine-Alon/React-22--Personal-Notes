@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { LoginForm } from "../LoginForm";
 import { RegisterForm } from "../RegisterForm";
-
 import "./AuthForm.css";
 
 export const AuthForm = () => {

@@ -25,7 +25,7 @@
   | isDisabled | boolean                     | флаг недоступности |
   | type       | `submit`, `reset`, `button` | тип кнопки         |
 
-- [AuthForm](./src/components/AuthForm/AuthForm.tsx) - компонент отображения форм авторизации и регистарции
+- [Account](./src/components/AuthForm/AuthForm.tsx) - компонент отображения форм авторизации и регистарции
 - [LoginForm](./src/components/LoginForm/LoginForm.tsx) - форма авторизации
 - [RegisterForm](./src/components/RegisterForm/RegisterForm.tsx) - форма регистрации
 - [NoteForm](./src/components/NoteForm/NoteForm.tsx) - форма создания заметки

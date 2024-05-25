@@ -8,9 +8,8 @@ import {z} from "zod";
 import {useMutation} from "@tanstack/react-query";
 import {registerUser} from "../../api/User.ts";
 
-
 const schemaRegisterForm = z.object({
-    name: z.string().min(5),
+    username: z.string().min(5),
     email: z.string().email().min(5),
     password: z.string().min(8)
 })
@@ -30,8 +29,8 @@ export const RegisterForm: FC = () => {
 
     return (
         <form className="register-form" onSubmit={handleSubmit((data) => mutation.mutate(data))}>
-            <FormField label="Name" errorMessage={errors.name?.message}>
-                <input {...register("name")} />
+            <FormField label="Name" errorMessage={errors.username?.message}>
+                <input {...register("username")} />
             </FormField>
             <FormField label="Email" errorMessage={errors.email?.message}>
                 <input {...register("email")}/>

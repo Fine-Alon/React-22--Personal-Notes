@@ -8,7 +8,8 @@ export const NotesListView = () => {
     const {
         noteList,
         status
-    } =  useGetNoteList('api/notes/')
+    } = useGetNoteList('api/notes/', 'page=1')
+
 
     switch (status) {
         case 'pending':
@@ -18,7 +19,7 @@ export const NotesListView = () => {
         case 'success':
             return (
                 <ul className="note-list-view">
-                    {noteList.list && noteList.list.map(note =>
+                    {noteList && noteList.list.map(note =>
                         <li key={note.id}><NoteView title={note.title}
                                                     createdAt={note.createdAt} id={note.id}
                                                     text={note.text} userId={note.userId}/></li>)}
